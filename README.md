@@ -4,7 +4,9 @@ This repository includes a machine learning application to predict concrete comp
 The response variable is the compressive strength determined through destructive testing of cubic, cylindrical, or drilled core specimens, normalised to a reference cylinder with a 300×150 mm geometry. A CatBoost regression model is built, trained, and integrated within this repository with a Tree-Structured Parzen Estimator (TPE) for hyperparameter optimisation. 
 	
 # Database
-The code presented in this repository focuses on the prediction of the compressive strength through a single NDT method (UPV) and is taken from a larger study focusing on the predictive ability of other techniques, such as rebound hammer (RH) and SonReb (UPV and RH combined). The article manuscript is currently under review and will be linked once available. ‘UPV Data.csv’ provides all the necessary data to execute the run.py script. The complete database is available open source at: https://doi.org/10.5281/zenodo.14921019. 
+The code presented in this repository focuses on the prediction of the compressive strength through a single NDT method (UPV) and is taken from a larger study focusing on the predictive ability of other techniques, such as rebound hammer (RH) and SonReb (UPV and RH combined). The journal article describing the derivation and application this work is published open-access at: https://doi.org/10.1016/j.ndteint.2025.103549. 
+
+UPV Data.csv’ provides all the necessary data to execute the run.py script. The complete database is available open source at: https://doi.org/10.5281/zenodo.14921019. 
 
 # Model Training
 Each model is trained and tested using a k-fold cross-validation approach. A 10-fold split is implemented, with the hyperparameters optimised through the TPE in each fold.
